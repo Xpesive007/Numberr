@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #cont{
+        height: 100px;
+        width: 250px;
+        background-color: blue;
+        margin-left: 40%;
+        margin-top: 20%;
+        border-radius: 10px;
+    }
+    #bee{
+        font-size: 30px;
+        color: whitesmoke;
+        margin-left: 120px;
+    }
+    #bring{
+        height: 30px;
+        width: 40px;
+        background-color: white;
+        border: none;
+        margin-left: 80px;
+        border-radius: 5px;
+    }
+    #brim{
+        height: 30px;
+        width: 40px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+    }
+</style>
+
+</head>
+<body>
+    
+   <div id="cont">
+    <p id="bee"></p>
+
+    <button id="bring" onclick="pun()">+</button>
+    <button id="brim" onclick="pub()">-</button>
+   </div>
+</body>
+</html>
+
+
+
+<script>
+     let pal = document.getElementById('bee')
+     let rive = document.getElementById('bring')
+     let riv = document.getElementById('brim')
+
+     let red = 0
+     //let fig = 140
+
+    let h1  = document.createElement('h1')
+    //h1.innerHTML = fig
+    document.body.appendChild(h1)
+      pal.innerHTML = red
+    //   pal.style.backgroundColor = 'red'`
+     
+
+     function pun(){
+        ++red
+        bee.innerHTML = red
+     }
+     function pub(){
+        --red
+        bee.innerHTML = red
+     }
+</script>
